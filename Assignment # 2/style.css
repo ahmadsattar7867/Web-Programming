@@ -40,7 +40,7 @@ h1 {
 }
 .pdf{
     margin-top: -10px;
-    animation: glow 0.2s linear infinite; 
+    animation: glow 0.4s linear infinite; 
     color:rgb(254, 125, 4);
 }
 
