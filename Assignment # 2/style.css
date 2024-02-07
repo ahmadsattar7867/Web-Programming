@@ -1,0 +1,239 @@
+header {
+    background-color: rgb(254, 125, 4);
+
+}
+
+h1 {
+    color: white;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#navbar li {
+    padding-top: 20px;
+    display: inline-block;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+#navbar li a {
+
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.pd {
+    text-align: left;
+    color: white;
+    margin-left: -1510px;
+    font-size: 35px;
+}
+
+/* __________________________________________________________________________________________
+ */
+
+.slider {
+    transition-duration: 0.9 ease-in-out
+}
+
+/* __________________________________________________________________________________________
+ */
+
+#ts {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.pizza-specials {
+    margin-left: 40px;
+}
+
+div.gallery {
+    border: 1px solid #e3e1e1;
+    padding: 20px;
+    border: 3px solid rgb(193, 191, 191);
+
+}
+
+.ps1 {
+    transition: transform 3s ease;
+}
+
+.ps1:hover {
+    transform: rotate(360deg);
+}
+
+.ps2 {
+    transition: transform 2s ease;
+}
+
+.ps2:hover {
+    transform: scaleX(-1);
+}
+
+
+.ps3 {
+    transition: transform 3s ease;
+}
+
+.ps3:hover {
+    transform: rotate(360deg);
+}
+
+div.gallery:hover {
+    box-shadow: 0 14px 18px 0 rgba(10, 10, 10, 0.2);
+    /* Initial shadow style */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 32%;
+
+}
+
+/* __________________________________________________________________________________________
+ */
+
+.testimonials {
+    position: relative;
+
+}
+
+.testimonials h1 {
+    color: black;
+}
+
+.emp {
+    text-align: center;
+    font-size: 20px;
+}
+
+.emp h1 {
+    text-align: center;
+}
+
+.testimonials .emp b {
+    text-align: center;
+    font-size: 50px;
+}
+
+.btn {
+    background-color: rgb(116, 188, 116);
+    margin-left: 700px;
+    transition: background-color 2s ease;
+
+}
+
+.btn:hover {
+    background-color: orangered;
+}
+
+/* __________________________________________________________________________________________
+ */
+.cta {
+    margin-left: 30px;
+    width: 95%;
+    font-size: 30px;
+    box-shadow: 0 14px 18px 0 rgba(10, 10, 10, 0.2);
+}
+
+.cta1,
+.cta2,
+.cta3 {
+    border: 2px solid rgb(242, 242, 242);
+}
+
+.cta1 h2,
+.cta1 text {
+    margin-top: 25px;
+    margin-left: 30px;
+
+}
+
+.cta1t {
+    margin-left: 30px;
+    margin-top: -2px;
+    margin-bottom: 25px;
+}
+
+
+/* __________________________________________________________________________________________
+ */
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:hover {
+    box-shadow: 0 14px 18px 0 rgba(10, 10, 10, 0.2);
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    background-color: #9ccc9d;
+}
+
+.contact-form h1 {
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* __________________________________________________________________________________________
+ */
+
+footer {
+    background-color: rgb(254, 125, 4);
+    height: 100px;
+}
+
+footer .txt p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.txt p {
+    padding-top: 40px;
+}
