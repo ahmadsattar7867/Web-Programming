@@ -27,6 +27,11 @@ h1 {
     text-align: center;
 }
 
+
+#navbar li a:hover {
+    color: black;
+    transition: color 1s ease;
+}
 .pd {
     text-align: left;
     color: white;
@@ -37,9 +42,6 @@ h1 {
 /* __________________________________________________________________________________________
  */
 
-.slider {
-    transition-duration: 0.9 ease-in-out
-}
 
 /* __________________________________________________________________________________________
  */
