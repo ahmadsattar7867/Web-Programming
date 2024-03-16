@@ -55,27 +55,55 @@ $(document).ready(function() {
 
 
 
-    const navbtn = $(".navbtnn");
-    navbtn.on("mouseover", function() {
-        cursorOutline.css({
-            transition: "width 0.7s ease, height 0.7s ease",
-            color: "white"
+    $(document).ready(function() {
+        const navbtn = $(".navbtnn");
+        const fastbtn = $(".fastbtn"); // Select the button with class "fastbtn"
+    
+        // Functionality for navbtn
+        navbtn.on("mouseover", function() {
+            cursorOutline.css({
+                transition: "width 0.7s ease, height 0.7s ease",
+                color: "white"
+            });
+    
+            $(this).css({
+                color: "white", // Change text color to white
+                transition: "color 0.5s ease" // Apply transition to color change
+            });
+        }).on("mouseout", function() {
+            cursorOutline.css({
+                color: "gray" // Revert cursor color to gray
+            });
+    
+            $(this).css({
+                color: "gray", // Revert text color to gray
+                transition: "color 0.5s ease" // Apply transition to color change
+            });
         });
     
-        $(this).css({
-            color: "white", // Change text color to white
-            transition: "color 0.5s ease" // Apply transition to color change
-        });
-    }).on("mouseout", function() {
-        cursorOutline.css({
-            color: "gray" // Revert cursor color to gray
-        });
+        // Functionality for fastbtn
+        fastbtn.on("mouseover", function() {
+            cursorOutline.css({
+                transition: "width 0.7s ease, height 0.7s ease",
+                color: "white"
+            });
     
-        $(this).css({
-            color: "gray", // Revert text color to gray
-            transition: "color 0.5s ease" // Apply transition to color change
+            $(this).css({
+                color: "white", // Change text color to white
+                transition: "color 0.5s ease" // Apply transition to color change
+            });
+        }).on("mouseout", function() {
+            cursorOutline.css({
+                color: "gray" // Revert cursor color to gray
+            });
+    
+            $(this).css({
+                color: "gray", // Revert text color to gray
+                transition: "color 0.5s ease" // Apply transition to color change
+            });
         });
     });
+    
 
 
   
