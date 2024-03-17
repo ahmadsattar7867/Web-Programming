@@ -105,6 +105,30 @@ $(document).ready(function() {
     });
     
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+document.addEventListener('scroll', function() {
+    var educationText = document.getElementById('education');
+    var position = educationText.getBoundingClientRect();
+    
+    // If the top of the text is within the viewport
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        educationText.classList.add('animated-text');
+    } else {
+        educationText.classList.remove('animated-text');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var exp = document.getElementById('exp');
+    var position = exp.getBoundingClientRect();
+    
+    // If the top of the text is within the viewport
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        exp.classList.add('animated-text');
+    } else {
+        exp.classList.remove('animated-text');
+    }
+});
 
   
     

@@ -214,3 +214,46 @@ img {
 .bss {
     margin-left: 49px;
 }
+
+.animated-text {
+    position: absolute;
+    color: gray; /* Initial color */
+    font-size: 400px; /* Initial font size */
+    /* left: -200px; */
+    /* top: 50%; */
+    animation: slideIn 2s forwards, changeColor 3s forwards, changeFontSize 2s forwards; /* Applying all animations */
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(240%);
+    }
+}
+
+/* Keyframes for the color change animation */
+@keyframes changeColor {
+    from {
+        color: rgb(228, 169, 76); /* Start color */
+    }
+    to {
+        color: white; /* End color */
+    }
+}
+
+/* Keyframes for the font size change animation */
+@keyframes changeFontSize {
+    from {
+        font-size: 100px; /* Start font size */
+    }
+    to {
+        font-size: 40px; /* End font size */
+    }
+}
+
+#exp {
+    margin-left: -63px;
+}
