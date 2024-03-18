@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
     const cursors = $("[data-cursor]");
     const hoveredElements = $("button, a");
 
-    $(window).on("mousemove", function(event) {
+    $(window).on("mousemove", function (event) {
         const posX = event.clientX;
         const posY = event.clientY;
 
@@ -13,7 +13,7 @@ $(document).ready(function() {
         });
 
         /** cursor outline position */
-        setTimeout(function() {
+        setTimeout(function () {
             cursors.eq(1).css({
                 left: posX + "px",
                 top: posY + "px"
@@ -24,7 +24,7 @@ $(document).ready(function() {
     const cursorOutline = $(".cursor-outline");
     const navbarListItems = $(".navbarr ul li");
 
-    navbarListItems.on("mouseover", function() {
+    navbarListItems.on("mouseover", function () {
         cursorOutline.css({
             transition: "width 0.7s ease, height 0.7s ease",
             width: "80px",
@@ -37,7 +37,7 @@ $(document).ready(function() {
         });
     });
 
-    navbarListItems.on("mouseout", function() {
+    navbarListItems.on("mouseout", function () {
         cursorOutline.css({
             transition: "width 0.7s ease, height 0.7s ease",
             width: "40px",
@@ -55,81 +55,93 @@ $(document).ready(function() {
 
 
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         const navbtn = $(".navbtnn");
-        const fastbtn = $(".fastbtn"); // Select the button with class "fastbtn"
-    
+        const fastbtn = $(".fastbtn");
+
         // Functionality for navbtn
-        navbtn.on("mouseover", function() {
+        navbtn.on("mouseover", function () {
             cursorOutline.css({
                 transition: "width 0.7s ease, height 0.7s ease",
                 color: "white"
             });
-    
+
             $(this).css({
                 color: "white", // Change text color to white
                 transition: "color 0.5s ease" // Apply transition to color change
             });
-        }).on("mouseout", function() {
+        }).on("mouseout", function () {
             cursorOutline.css({
                 color: "gray" // Revert cursor color to gray
             });
-    
+
             $(this).css({
                 color: "gray", // Revert text color to gray
                 transition: "color 0.5s ease" // Apply transition to color change
             });
         });
-    
+
         // Functionality for fastbtn
-        fastbtn.on("mouseover", function() {
+        fastbtn.on("mouseover", function () {
             cursorOutline.css({
                 transition: "width 0.7s ease, height 0.7s ease",
                 color: "white"
             });
-    
+
             $(this).css({
                 color: "white", // Change text color to white
                 transition: "color 0.5s ease" // Apply transition to color change
             });
-        }).on("mouseout", function() {
+        }).on("mouseout", function () {
             cursorOutline.css({
                 color: "gray" // Revert cursor color to gray
             });
-    
+
             $(this).css({
                 color: "gray", // Revert text color to gray
                 transition: "color 0.5s ease" // Apply transition to color change
             });
         });
     });
-    
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-document.addEventListener('scroll', function() {
-    var educationText = document.getElementById('education');
-    var position = educationText.getBoundingClientRect();
-    
-    // If the top of the text is within the viewport
-    if (position.top >= 0 && position.bottom <= window.innerHeight) {
-        educationText.classList.add('animated-text');
-    } else {
-        educationText.classList.remove('animated-text');
-    }
-});
 
-document.addEventListener('scroll', function() {
-    var exp = document.getElementById('exp');
-    var position = exp.getBoundingClientRect();
-    
-    // If the top of the text is within the viewport
-    if (position.top >= 0 && position.bottom <= window.innerHeight) {
-        exp.classList.add('animated-text');
-    } else {
-        exp.classList.remove('animated-text');
-    }
-});
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    document.addEventListener('scroll', function () {
+        var educationText = document.getElementById('education');
+        var position = educationText.getBoundingClientRect();
 
-  
-    
+        // If the top of the text is within the viewport
+        if (position.top >= 0 && position.bottom <= window.innerHeight) {
+            educationText.classList.add('animated-text');
+        } else {
+            educationText.classList.remove('animated-text');
+        }
+    });
+
+    document.addEventListener('scroll', function () {
+        var exp = document.getElementById('exp');
+        var position = exp.getBoundingClientRect();
+
+        // If the top of the text is within the viewport
+        if (position.top >= 0 && position.bottom <= window.innerHeight) {
+            exp.classList.add('animated-text');
+        } else {
+            exp.classList.remove('animated-text');
+        }
+    });
+
+    document.addEventListener('scroll', function () {
+        var exp = document.getElementById('projtxt');
+        var position = exp.getBoundingClientRect();
+
+        // If the top of the text is within the viewport
+        if (position.top >= 0 && position.bottom <= window.innerHeight) {
+            exp.classList.add('animated-text');
+        } else {
+            exp.classList.remove('animated-text');
+        }
+    });
+
+
+
 });
