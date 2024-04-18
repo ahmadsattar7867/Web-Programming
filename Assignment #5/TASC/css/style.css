@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap');
+* {
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+
+.btn {
+    margin-right: 50px;
+}
+
+
+
+
+.navbar-collapse ul{
+    font-size: 40px;
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+    margin-left: 70px;
+
+    cursor: pointer;
+    width: 200px;
+    border-radius: 50px;
+    /* box-shadow: 0px 8px 50px 5px #02d97542; */
+    border: 4px solid transparent;
+    transition: border-color 0.7s ease, box-shadow 0.7s ease;
+}
+
+.nav-link:hover {
+    border-color: white;
+    color: white;
+    box-shadow: inset 0px 0px 0 5px #ffffff;
+}
+
+h1{
+    color: white !important
+}
+
+h3{
+    color: white !important
+}
+
+h2{
+    color: white !important
+}
+
+
+
+
+#tsc{
+    font-size: 38px;
+    color: white;
+}
+
+#bgg{
+    z-index: -100;
+    margin-top: -760px;
+    width: 1800px;
+    margin-left: -220px;
+    height: 750px;
+
+}
+
+body {
+    background-color:#212333 !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 200;
+  color: rgb(226, 226, 226);
+}
+
+.grid-container {
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "pageLeft pageCenter pageRight";
+  }
+  .pageCenter {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.1fr 0.5fr 0.1fr;
+    gap: 45px 0px;
+    grid-template-areas:
+      "pageTitle"
+      /* "pageSeparator" */
+      "pageDescription"
+      "pageButton";
+    grid-area: pageCenter;
+  }
+
+.pageTitle {
+    grid-area: pageTitle;
+    text-align: center;
+}
+
+
+
+
+.pageDescription {
+    margin-top: -100px;
+    grid-area: pageDescription;
+    place-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 300;
+    
+}
+
+.pageDescription h3 {
+    margin: 0px;
+    color: rgb(192, 192, 192);
+}
+
+.pageButton {
+    
+    grid-area: pageButton;
+    display: grid;
+    place-items: center;
+
+}
+
+.pageButton button {
+    margin-left: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #e9e9e9;
+    font-size: 1.1em;
+    border: 0;
+    padding: 20px 50px;
+    width: 250px;
+    border-radius: 50px;
+    box-shadow: 0px 8px 50px 5px #02d97542;
+    border: 4px solid transparent;
+    transition: border-color 0.7s ease, box-shadow 0.7s ease;
+}
+
+.pageButton button:hover {
+    border-color: white;
+    color: white;
+    box-shadow: inset 0px 0px 0 1px #ffffff;
+}
+
+.pageButton svg {
+  
+   float: left;
+
+}
+
+
+#circleTiny,
+#circleMiddle,
+#circleBig {
+    fill: #02D975;
+}
+
+
+#circleBig {
+    transition: all 0.7s ease;
+}
+#circleMiddle {
+    transition: all 1.1s ease;
+}
+#circleTiny {
+    transition: all 1.6s ease;
+}
+
+.pageButton:hover #circleTiny{
+    transform: translateY(-40%);
+    opacity: 0;
+}
+
+.pageButton:hover #circleMiddle{
+    transform: translateY(-40%);
+    opacity: 0;
+}
+
+.pageButton:hover #circleBig{
+    transform: translateY(-40%);
+    opacity: 0;
+}
+
+
+.pageLeft {
+    grid-area: pageLeft;
+    margin-top: 20vh;
+    display: none;
+    place-items: center;
+}
+
+.pageRight {
+    grid-area: pageRight;
+    margin-top: 20vh;
+    display: none;
+    place-items: center;
+}
+
+
+
+.container {
+    display: flex;
+  }
+  .container > div {
+    flex: 1; /*grow*/
+  }
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    body {
+        overflow-y: scroll; 
+    }
+
+    .pageLeft, .pageRight {
+        display: none;
+    }
+    #bgg{
+        display: none;
+    }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    body {
+        overflow-y: scroll; 
+    }
+
+    .pageTitle h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 5em;
+    }
+    .pageTitle h2 {
+        margin: 0;
+        margin-top: -0.5em;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    
+
+    .pageLeft, .pageRight {
+        display: none;
+    }
+    #bgg{
+        display: none;
+    }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1100px) { 
+
+    body {
+        overflow-y: scroll; /* change 'auto' to 'scroll' */
+    }
+    .pageLeft, .pageRight {
+        display: none;
+    }
+
+    .pageTitle h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 7em;
+    }
+    .pageTitle h2 {
+        margin: 0;
+        margin-top: -0.5em;
+        font-weight: 700;
+        font-size: 2.5em;
+    }
+    #bgg{
+        display: none;
+    }
+    .pageLeft{
+        display: grid;
+    }
+    .pageRight{
+        display: grid;
+    }
+
+    
+ }
+
+/* Large desktop */
+@media (min-width: 1000px) {
+    .pageTitle h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 10em;
+    }
+    .pageTitle h2 {
+        margin: 0;
+        margin-top: -0.5em;
+        font-weight: 700;
+        font-size: 3.5em;
+    }
+    
+ }
+
+
+
