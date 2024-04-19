@@ -142,6 +142,18 @@ $(document).ready(function () {
         }
     });
 
+    document.addEventListener('scroll', function () {
+        var exp = document.getElementById('intxt');
+        var position = exp.getBoundingClientRect();
+
+        // If the top of the text is within the viewport
+        if (position.top >= 0 && position.bottom <= window.innerHeight) {
+            exp.classList.add('animated-text');
+        } else {
+            exp.classList.remove('animated-text');
+        }
+    });
+
 
 
 });

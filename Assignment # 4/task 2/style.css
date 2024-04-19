@@ -313,3 +313,20 @@ img {
 .card:hover {
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.5); 
 }
+
+
+#intxt {
+    margin-left: -150px;
+}
+
+
+.noline a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.7s ease, text-shadow 0.1s ease; /* Add transition effect */
+}
+
+.noline a:hover {
+    color: lightgray;
+    text-shadow: 0 0 5px rgba(255,255,255,0.9); /* Add text glow */
+}
